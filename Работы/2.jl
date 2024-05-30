@@ -5,7 +5,7 @@ r = Robot(15, 15, animate=true)
 
 # Функция для перемещения робота вдоль правой границы
 function gobok(r::Robot)
-    while !isborder(r, HorizonSide(3))  # HorizonSide(3) соответствует движению влево
+    while !isborder(r, HorizonSide(3))  # HorizonSide(3) соответствует движению вправо
         move!(r, HorizonSide(3))
     end
 end
